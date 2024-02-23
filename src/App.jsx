@@ -1,9 +1,13 @@
+import Header from "./containers/Header";
+import MainSection from "./containers/MainSection";
+import Footer from "./containers/Footer";
+
 export default function App() {
   return (
     <>
-      <h1 className="text-red-400 text-xl">
-        Hello world!
-      </h1>
+      <Header/>
+      <MainSection />
+      <Footer />
     </>
   )
 }

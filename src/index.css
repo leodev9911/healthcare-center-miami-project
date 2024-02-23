@@ -9,5 +9,16 @@
 }
 
 html {
-  font-family: 'montserrat', 'arial';
+  font-family: 'montserrat';
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  background-image: url(./assets/hero-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
