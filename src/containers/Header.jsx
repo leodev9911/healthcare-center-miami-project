@@ -1,10 +1,10 @@
 import NavBar from "../components/NavBar"
 import rectangle from "../assets/rectangle.png"
-import ContactButton from "../components/ContactButton"
+import LinkButton from "../components/LinkButton"
 
 export default function Header() {
   return (
-    <header className="w-full pb-24 lg:pb-96 rounded-br-[6.5rem] rounded-bl-[6.5rem] relative flex flex-col items-center gap-40">
+    <header className="w-full pb-24 lg:pb-96  relative flex flex-col items-center gap-40">
       <img 
         className="w-full h-full absolute z-0"
         src={rectangle} 
@@ -17,7 +17,7 @@ export default function Header() {
         >
           Tu bienestar es nuestra prioridad
         </h1>
-        <ContactButton text='Contáctanos' />
+        <LinkButton text='Contáctanos' />
       </section>
       <section className="relative z-10 max-w-5xl flex items-center gap-[4px] px-2">
         <div className="w-2 lg:w-3 h-2 lg:h-3 rounded-full mx-1 cursor-pointer bg-[#158EE2]"></div>
