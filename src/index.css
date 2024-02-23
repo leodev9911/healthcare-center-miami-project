@@ -27,3 +27,7 @@ header {
 .card {
   box-shadow: 3px 7px 31px -13px rgba(0,0,0,0.75);
 }
+
+footer {
+  border-radius: 200px 200px 0px 0px / 70px 70px 0px 0px;
+}
