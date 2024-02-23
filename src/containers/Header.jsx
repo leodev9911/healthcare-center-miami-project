@@ -2,7 +2,8 @@ import NavBar from "../components/NavBar"
 import rectangle from "../assets/rectangle.png"
 import LinkButton from "../components/LinkButton"
 
-export default function Header() {
+
+export default function Header({ setMobileMenuIsActive }) {
   return (
     <header className="w-full pb-24 lg:pb-96  relative flex flex-col items-center gap-40">
       <img 
@@ -10,7 +11,7 @@ export default function Header() {
         src={rectangle} 
         alt="Hero image" 
       />
-      <NavBar/>
+      <NavBar setMobileMenuIsActive={setMobileMenuIsActive} />
       <section className="relative z-10 max-w-5xl flex items-center flex-col text-center text-white gap-8 px-2">
         <h1 
           className="font-extrabold max-w-[900px] text-[40px] leading-10 lg:text-[80px] lg:leading-[100px]"

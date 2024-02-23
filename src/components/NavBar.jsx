@@ -3,9 +3,9 @@ import spainFlag from '../assets/spain-flag.png'
 import arrowDown from '../assets/arrow-down.svg'
 import hamburguerMenu from '../assets/hamburguer-menu.svg'
 
-export default function NavBar() {
+export default function NavBar({ setMobileMenuIsActive }) {
   return (
-    <nav className="w-full max-w-5xl flex items-center justify-between py-8 px-2 z-30 relative">
+    <nav className="w-full max-w-5xl flex items-center justify-between py-8 px-2 z-10 relative">
       <img 
         className='w-[248px] h-[43px]'
         src={logoImage} 
@@ -52,7 +52,8 @@ export default function NavBar() {
         <img
           className='cursor-pointer lg:hidden' 
           src={hamburguerMenu} 
-          alt="Hamburguer menu" 
+          alt="Hamburguer menu"
+          onClick={() => setMobileMenuIsActive(prev => !prev)} 
         />
       </section>
     </nav>
