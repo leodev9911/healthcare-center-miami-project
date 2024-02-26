@@ -5,7 +5,6 @@ import MobileMenu from "../containers/MobileMenu"
 import NavBar from "../components/Shared/NavBar"
 import HomePresentation from "../components/Home/HomePresentation"
 import HomeHeaderSlider from "../components/Home/HomeHeaderSlider"
-import homeBackgroundImage from "../assets/hero-image.png"
 import Main from "../containers/MainSection"
 import Home from "../pages/Home"
 import { Route, Routes, useLocation } from "react-router-dom"
@@ -21,9 +20,7 @@ export default function App() {
   return (
     <>
       {mobileMenuIsActive && <MobileMenu setMobileMenuIsActive={setMobileMenuIsActive} />}
-      <Header
-        backgroundImage={homeBackgroundImage}
-      >
+      <Header>
         <NavBar 
           setMobileMenuIsActive={setMobileMenuIsActive} 
         />
