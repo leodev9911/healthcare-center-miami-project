@@ -1,6 +1,6 @@
 import spainFlag from '../assets/spain-flag.png'
 import arrowDown from '../assets/arrow-down.svg'
-import Logo from '../components/Logo'
+import Logo from '../components/Shared/Logo'
 
 export default function Footer() {
   return (

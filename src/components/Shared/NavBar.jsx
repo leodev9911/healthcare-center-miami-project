@@ -1,6 +1,6 @@
-import spainFlag from '../assets/spain-flag.png'
-import arrowDown from '../assets/arrow-down.svg'
-import hamburguerMenu from '../assets/hamburguer-menu.svg'
+import spainFlag from '../../assets/spain-flag.png'
+import arrowDown from '../../assets/arrow-down.svg'
+import hamburguerMenu from '../../assets/hamburguer-menu.svg'
 import Logo from './Logo'
 
 export default function NavBar({ setMobileMenuIsActive }) {

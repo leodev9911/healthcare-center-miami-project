@@ -1,9 +1,9 @@
-import Card from "../components/CardComponent"
+import Card from "../components/Shared/CardComponent"
 import bandAid from "../assets/band-aid.svg"
 import bottle from "../assets/bottle.svg"
 import file from "../assets/file.svg"
 import firstAidKit from "../assets/first-aid-kit.svg"
-import ContactButton from "../components/LinkButton"
+import ContactButton from "../components/Shared/LinkButton"
 import servicesImages from "../assets/services-images.png"
 
 export default function MainSection() {
