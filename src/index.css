@@ -20,17 +20,31 @@
 html {
   font-family: "Montserrat", sans-serif;
   width: 100%;
+  height: 100%;
 }
 
 body {
   width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
 header {
   border-radius: 0px 0px 300px 300px / 0px 0px 100px 100px;
-  background-image: url(./assets/hero-image.png);
+  /* background-image: url(./assets/hero-image.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+}
+
+header .home-background-img {
+  border-radius: 0px 0px 300px 300px / 0px 0px 100px 100px;
 }
 
 .card {

@@ -2,28 +2,29 @@ import spainFlag from '../../assets/spain-flag.png'
 import arrowDown from '../../assets/arrow-down.svg'
 import hamburguerMenu from '../../assets/hamburguer-menu.svg'
 import Logo from './Logo'
+import { Link } from 'react-router-dom'
 
 export default function NavBar({ setMobileMenuIsActive }) {
   return (
-    <nav className="w-full lg:max-w-[80%] flex gap-8 items-center justify-between py-8 px-2 z-10 relative">
+    <nav className="w-full lg:max-w-[80%] flex gap-8 items-center justify-between py-8 px-5 z-10 relative">
       <Logo />
       <section>
-        <ul className='hidden text-colors-pageWhite lg:flex items-center gap-20 text-xl 2xl:text-2xl'>
+        <ul className='hidden text-colors-pageWhite lg:flex items-center gap-20 text-lg'>
           <li>
-            <a 
-              href=""
+            <Link 
+              to="/our-company"
               className='cursor-pointer hover:underline duration-300'
             >
               Nuestra Compañía
-            </a>
+            </Link>
           </li>
           <li>
-            <a 
-              href=""
+            <Link 
+              to="/our-services"
               className='cursor-pointer hover:underline duration-300'
             >
               Nuestros Servicios
-            </a>
+            </Link>
           </li>
           <li className='flex items-center gap-3'>
             <img 
@@ -37,12 +38,12 @@ export default function NavBar({ setMobileMenuIsActive }) {
             />
           </li>
           <li>
-            <a 
-              href=""
+            <Link 
+              to=""
               className='cursor-pointer hover:underline duration-300'
             >
               Contáctanos
-            </a>
+            </Link>
           </li>
         </ul>
         <img

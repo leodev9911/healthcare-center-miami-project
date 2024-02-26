@@ -14,8 +14,8 @@ export default function Card({
         />
       </div>
       <div className="flex flex-col items-center justify-between flex-grow text-colors-pageGray">
-        <h3 className="text-[16px] xl:text-[24px] 2xl:text-4xl font-bold w-[122px] lg:w-[90%]">{cardTitle}</h3>
-        <p className="w-[122px] lg:w-[90%] text-[12px] xl:text-[18px] 2xl:text-2xl">{cardDescription}</p>
+        <h3 className="text-[16px] xl:text-2xl font-bold w-[122px] lg:w-[90%]">{cardTitle}</h3>
+        <p className="w-[122px] lg:w-[90%] text-[12px] xl:text-xl">{cardDescription}</p>
       </div>
     </div>
   )
