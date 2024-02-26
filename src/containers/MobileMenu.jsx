@@ -9,7 +9,7 @@ export default function MobileMenu({ setMobileMenuIsActive }) {
 
   return (
     <section className='flex fixed z-30 w-full h-screen top-0 bottom-0 left-0 right-0 bg-white'>
-      <div className='w-[20%] bg-[#898989]' />
+      <div className='w-[20%] bg-colors-pageGray' />
       <div className='w-[80%] px-8 py-11'>
         <div className='flex justify-between items-center mb-8'>
           <div className='flex items-center gap-3'>
@@ -32,7 +32,7 @@ export default function MobileMenu({ setMobileMenuIsActive }) {
         <div className='flex flex-col gap-3'>
           <div>
             <div className='flex items-center justify-between'>
-              <a className={`${toggle && 'text-[#158EE2] font-bold'}`}>Nuestra Compañía</a>
+              <a className={`${toggle && 'text-colors-pageBlue font-bold'}`}>Nuestra Compañía</a>
               <img 
                 src={toggle ? arrowUp : arrowDown} 
                 alt='Arrow up icon'

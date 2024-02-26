@@ -6,6 +6,14 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      colors: {
+        pageBlue: 'var(--page-blue)',
+        pageWhite: 'var(--page-white)',
+        pageGray: 'var(--page-gray)',
+        pageFooterBlue: 'var(--page-footer-blue)',
+      },      
+    }
   },
   plugins: [],
 }

@@ -4,7 +4,7 @@ import arrowDown from '../assets/arrow-down.svg'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-11 items-center bg-blue-950 py-9 mt-[160px]">
+    <footer className="flex flex-col gap-11 items-center bg-colors-pageFooterBlue py-9 mt-[160px]">
       <nav className="w-full max-w-5xl flex flex-col lg:flex-row gap-6 items-center justify-between px-2 z-30 relative">
         <img 
           className='w-[248px] h-[43px]'
@@ -12,7 +12,7 @@ export default function Footer() {
           alt="Logo"   
         />
         <section>
-          <ul className='text-white flex flex-col gap-8 lg:flex-row items-center lg:gap-20'>
+          <ul className='text-colors-pageWhite flex flex-col gap-8 lg:flex-row items-center lg:gap-20'>
             <li>
               <a 
                 href=""
@@ -51,7 +51,7 @@ export default function Footer() {
           </ul>
         </section>
       </nav>
-      <p className='text-white'>© 2024 Moya Medical. Todos los derechos reservados.</p>
+      <p className='text-colors-pageWhite'>© 2024 Moya Medical. Todos los derechos reservados.</p>
     </footer>
   )
 }

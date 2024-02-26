@@ -12,7 +12,7 @@ export default function NavBar({ setMobileMenuIsActive }) {
         alt="Logo"   
       />
       <section>
-        <ul className='hidden text-white lg:flex items-center gap-20'>
+        <ul className='hidden text-colors-pageWhite lg:flex items-center gap-20'>
           <li>
             <a 
               href=""

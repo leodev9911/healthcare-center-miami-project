@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --page-blue: #158EE2;
+    --page-white: #FFFFFF;
+    --page-gray: #626265;
+    --page-footer-blue: #101C37;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
