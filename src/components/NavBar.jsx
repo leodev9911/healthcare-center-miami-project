@@ -1,18 +1,14 @@
-import logoImage from '../assets/logo.png'
 import spainFlag from '../assets/spain-flag.png'
 import arrowDown from '../assets/arrow-down.svg'
 import hamburguerMenu from '../assets/hamburguer-menu.svg'
+import Logo from './Logo'
 
 export default function NavBar({ setMobileMenuIsActive }) {
   return (
-    <nav className="w-full max-w-5xl flex items-center justify-between py-8 px-2 z-10 relative">
-      <img 
-        className='w-[248px] h-[43px]'
-        src={logoImage} 
-        alt="Logo"   
-      />
+    <nav className="w-full lg:max-w-[80%] flex gap-8 items-center justify-between py-8 px-2 z-10 relative">
+      <Logo />
       <section>
-        <ul className='hidden text-colors-pageWhite lg:flex items-center gap-20'>
+        <ul className='hidden text-colors-pageWhite lg:flex items-center gap-20 text-xl 2xl:text-2xl'>
           <li>
             <a 
               href=""

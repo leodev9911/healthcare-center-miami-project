@@ -1,16 +1,12 @@
-import logoImage from '../assets/logo.png'
 import spainFlag from '../assets/spain-flag.png'
 import arrowDown from '../assets/arrow-down.svg'
+import Logo from '../components/Logo'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-11 items-center bg-colors-pageFooterBlue py-9 mt-[160px]">
-      <nav className="w-full max-w-5xl flex flex-col lg:flex-row gap-6 items-center justify-between px-2 z-30 relative">
-        <img 
-          className='w-[248px] h-[43px]'
-          src={logoImage} 
-          alt="Logo"   
-        />
+    <footer className="flex flex-col gap-11 items-center bg-colors-pageFooterBlue py-9 px-2 mt-[160px] text-xl 2xl:text-2xl">
+      <nav className="w-full max-w-[80%] flex flex-col lg:flex-row gap-6 items-center justify-between px-2 z-30 relative">
+        <Logo />
         <section>
           <ul className='text-colors-pageWhite flex flex-col gap-8 lg:flex-row items-center lg:gap-20'>
             <li>
@@ -51,7 +47,7 @@ export default function Footer() {
           </ul>
         </section>
       </nav>
-      <p className='text-colors-pageWhite'>© 2024 Moya Medical. Todos los derechos reservados.</p>
+      <p className='text-colors-pageWhite text-center'>© 2024 Moya Medical. Todos los derechos reservados.</p>
     </footer>
   )
 }

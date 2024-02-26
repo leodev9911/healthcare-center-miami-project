@@ -12,9 +12,9 @@ export default function Header({ setMobileMenuIsActive }) {
         alt="Hero image" 
       />
       <NavBar setMobileMenuIsActive={setMobileMenuIsActive} />
-      <section className="relative z-10 max-w-5xl flex items-center flex-col text-center text-colors-pageWhite gap-8 px-2">
+      <section className="relative z-10 lg:max-w-[80%] flex items-center flex-col text-center text-colors-pageWhite gap-8 px-2">
         <h1 
-          className="font-extrabold max-w-[900px] text-[40px] leading-10 lg:text-[80px] lg:leading-[100px]"
+          className="font-extrabold lg:max-w-[80%] text-4xl leading-10 lg:text-[80px] lg:leading-[100px]"
         >
           Tu bienestar es nuestra prioridad
         </h1>
