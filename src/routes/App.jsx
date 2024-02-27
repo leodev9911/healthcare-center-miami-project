@@ -12,46 +12,64 @@ import OurCompany from "../pages/OurCompany"
 import WhyUs from "../pages/WhyUs"
 import OurServices from "../pages/OurServices"
 import WhereAreWe from "../pages/WhereAreWe"
+import { getHeaderBackgroundImageByRoute } from "../logic/getHeaderBackgroundImageByRoute"
+import { useGetScreenSize } from "../hooks/useGetScreenSize"
+import LinkButton from "../components/Shared/LinkButton"
+import HeroSectionTitle from "../components/Shared/HeroSectionTitle"
+import { routes } from "./routes"
 
 export default function App() {
-  const [mobileMenuIsActive, setMobileMenuIsActive] = useState(false)
-
   const location = useLocation()
+  const [mobileMenuIsActive, setMobileMenuIsActive] = useState(false)
+  const { screenSize } = useGetScreenSize()
+  const backgroundImage = screenSize > 600
+    ? getHeaderBackgroundImageByRoute(location.pathname).desktop
+    : getHeaderBackgroundImageByRoute(location.pathname).mobile
+  const pageTitle = routes.find(route => location.pathname === route.to).title
 
   return (
     <>
       {mobileMenuIsActive && <MobileMenu setMobileMenuIsActive={setMobileMenuIsActive} />}
-      <Header>
-        <NavBar 
-          setMobileMenuIsActive={setMobileMenuIsActive} 
+      <Header
+        backgroundImage={backgroundImage}
+        location={location}
+      >
+        <NavBar
+          setMobileMenuIsActive={setMobileMenuIsActive}
         />
-        {location.pathname === '/' && <HomePresentation />}
+        <HomePresentation>
+          <HeroSectionTitle 
+            heroTitle={pageTitle}
+            location={location} 
+          />
+          {location.pathname === '/' && <LinkButton text='Contáctanos' />}
+        </HomePresentation>
         {location.pathname === '/' && <HomeHeaderSlider />}
       </Header>
       <Main>
         <Routes>
           <Route
-            path="/"
+            path={routes[0].to}
             element={<Home />}
           />
           <Route
-            path="/our-services"
-            element={<OurServices />}
-          />
-          <Route
-            path="/our-services/:serviceid"
-            element={<OurServices />}
-          />
-          <Route
-            path="/our-company"
+            path={routes[1].to}
             element={<OurCompany />}
           />
           <Route
-            path="/our-company/why-us"
+            path={routes[2].to}
+            element={<OurServices />}
+          />
+          {/* <Route
+            path="/our-services/:serviceid"
+            element={<OurServices />}
+          /> */}
+          <Route
+            path={routes[3].to}
             element={<WhyUs />}
           />
           <Route
-            path="/our-company/where-are-we"
+            path={routes[4].to}
             element={<WhereAreWe />}
           />
         </Routes>
