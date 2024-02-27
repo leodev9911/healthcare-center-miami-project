@@ -4,7 +4,7 @@ export default function HeroSectionTitle({
 }) {
   return (
     <h1
-      className={`font-extrabold text-5xl lg:text-[60px] ${location.pathname === '/' && 'lg:max-w-[80%]'} leading-[60px] lg:leading-[100px] pb-4 lg:pb-16 pt-5`}
+      className={`font-extrabold text-5xl lg:text-[60px] ${location.pathname === '/' && 'lg:max-w-[80%]'} leading-[60px] lg:leading-[100px] pb-20 lg:pb-16 pt-5`}
     >
       {heroTitle}
     </h1>
