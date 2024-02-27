@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
      <section className="relative w-full flex flex-col items-center gap-10 mb-28">
-        <div className="flex w-full flex-wrap justify-center lg:justify-between gap-5 absolute top-[-44px] lg:top-[-90px]">
+        <div className="flex w-full flex-wrap justify-center lg:justify-between gap-5 absolute top-[-102px] lg:top-[-90px]">
           <Card 
             img={bandAid}
             imgAlt='Band aid image'
@@ -36,7 +36,7 @@ export default function Home() {
             cardDescription='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam'
           />
         </div>
-        <div className="flex flex-col items-center pt-[600px] sm:pt-[290px] text-center">
+        <div className="flex flex-col items-center pt-[510px] sm:pt-[290px] text-center">
           <h2 className="text-xl mb-4 lg:text-3xl 2xl:text-5xl text-colors-pageGray">Explora todos nuestros servicios</h2>
           <ContactButton text='Ver Más' />
         </div>

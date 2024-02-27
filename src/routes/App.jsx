@@ -15,6 +15,7 @@ import WhereAreWe from "../pages/WhereAreWe"
 
 export default function App() {
   const [mobileMenuIsActive, setMobileMenuIsActive] = useState(false)
+
   const location = useLocation()
 
   return (

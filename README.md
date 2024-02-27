@@ -2,21 +2,19 @@
 
 ## Descripción General
 
-El proyecto consiste en la implementación de la página "Home" de una aplicación web, utilizando React y TailwindCSS para el diseño responsivo y adaptable a diferentes dispositivos. La página debe ser funcional tanto en dispositivos móviles como en escritorio, manteniendo la consistencia visual en todas las plataformas.
+El proyecto consiste en la implementación de una landing page utilizando React y TailwindCSS para el diseño responsivo y adaptable a diferentes dispositivos. La página debe ser funcional tanto en dispositivos móviles como en escritorio, manteniendo la consistencia visual en todas las plataformas.
 
 ## Tecnologías Utilizadas
 
 - **React**: Biblioteca de JavaScript para construir interfaces de usuario de forma declarativa y eficiente.
 - **TailwindCSS**: Framework de CSS para diseñar interfaces personalizadas sin abandonar la hoja de estilos.
-- **Google Fonts**: Para la inclusión de tipografías personalizadas en la aplicación.
 
 ## Implementación del Proyecto
 
-✔️Implementar la página "Home" con diseño responsivo para móviles y escritorio.
-✔️Mantener la consistencia visual en todos los dispositivos.
-✔️Utilizar TailwindCSS para la creación de componentes estilizados.
-✔️Optimizar la velocidad de navegación y minimizar el código fuente.
-✔️Subir el código al repositorio personal en GitHub y mantenerlo privado.
+- Implementar la landing page con diseño responsivo para móviles y escritorio.
+- Mantener la consistencia visual en todos los dispositivos.
+- Utilizar TailwindCSS para la creación de componentes estilizados.
+- Optimizar la velocidad de navegación y minimizar el código fuente.
 
 ## Estructura del Proyecto
 
@@ -26,9 +24,12 @@ El proyecto se estructura de la siguiente manera:
   - **src/app.jsx**: Archivo principal de la aplicación.
   - **src/main.jsx**: Archivo principal de React donde se renderiza la aplicación.
   - **src/index.css**: Archivo de estilos principal de la aplicación.
-  - **src/components/**: Directorio para los componentes de React reutilizables.
-  - **src/containers/**: Directorio para contenedores de la aplicación.
   - **src/assets/**: Directorio para activos estáticos como imágenes y otros recursos.
+  - **src/components/**: Directorio para los componentes de React.
+    - **src/components/Shared/**: Componentes compartidos utilizados en varios lugares de la aplicación.
+    - **src/components/Home/**: Componentes específicos de la página de inicio.
+  - **src/logic/**: Directorio para lógica auxiliar que pueda ayudar al proyecto, como funciones de utilidad.
+  - **src/hooks/**: Directorio para los hooks personalizados de React.
 
 ## Guía de Instalación y Ejecución
 
@@ -50,3 +51,5 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
 ## Sitio en Vivo
 
 El sitio web está disponible en la siguiente dirección: [https://interview-healthcare-project.vercel.app/](https://interview-healthcare-project.vercel.app/)
+
+Recuerda que la estructura del proyecto ha sido actualizada para reflejar la organización de carpetas, donde ahora se tienen componentes específicos para la página de inicio dentro de la carpeta `Home` dentro de `components`.

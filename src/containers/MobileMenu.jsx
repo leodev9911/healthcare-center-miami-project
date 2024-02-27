@@ -8,7 +8,7 @@ export default function MobileMenu({ setMobileMenuIsActive }) {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <section className='flex fixed z-30 w-full h-screen top-0 bottom-0 left-0 right-0 bg-white'>
+    <section className='flex fixed z-30 w-full h-screen top-0 bottom-0 left-0 right-0 bg-colors-pageWhite'>
       <div className='w-[20%] bg-colors-pageGray' />
       <div className='w-[80%] px-8 py-11'>
         <div className='flex justify-between items-center mb-8'>
