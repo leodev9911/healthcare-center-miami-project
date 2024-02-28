@@ -12,6 +12,8 @@ export default {
         pageWhite: 'var(--page-white)',
         pageGray: 'var(--page-gray)',
         pageFooterBlue: 'var(--page-footer-blue)',
+        pageStarsGray: 'var(--page-stars-gray)',
+        pageStarsGold: 'var(--page-stars-gold)',
       },      
     }
   },
