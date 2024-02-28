@@ -3,6 +3,8 @@ import arrowDown from '../assets/arrow-down-blue.svg'
 import closeIcon from '../assets/close-icon.svg'
 import arrowUp from '../assets/arrow-up.svg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { routes } from '../routes/routes'
 
 export default function MobileMenu({ setMobileMenuIsActive }) {
   const [toggle, setToggle] = useState(false)
@@ -23,7 +25,8 @@ export default function MobileMenu({ setMobileMenuIsActive }) {
               className='cursor-pointer' 
             />
           </div>
-          <img 
+          <img
+            className='cursor-pointer' 
             src={closeIcon} 
             alt="Close icon"
             onClick={() => setMobileMenuIsActive(prev => !prev)} 
@@ -31,25 +34,53 @@ export default function MobileMenu({ setMobileMenuIsActive }) {
         </div>
         <div className='flex flex-col gap-3'>
           <div>
-            <div className='flex items-center justify-between'>
-              <a className={`${toggle && 'text-colors-pageBlue font-bold'}`}>Nuestra Compañía</a>
+            <div 
+              className='flex items-center justify-between cursor-pointer'
+              onClick={() => setToggle(prev => !prev)}
+            >
+              <p
+                className={`${toggle && 'text-colors-pageBlue font-bold'}`}
+              >
+                  Nuestra Compañía
+              </p>
               <img 
                 src={toggle ? arrowUp : arrowDown} 
-                alt='Arrow up icon'
-                onClick={() => setToggle(prev => !prev)} 
+                alt='Arrow up icon' 
               />
             </div>
             {toggle && <div className='flex flex-col gap-3 pl-3 mt-1 text-xs'>
-              <a>Moya Medical</a>
-              <a>Por qué nosotros</a>
-              <a>Ubicación en el mapa</a>
+              <Link
+                to={routes[1].to}
+                onClick={() => setMobileMenuIsActive(prev => !prev)}
+              >
+                Moya Medical
+              </Link>
+              <Link
+                to={routes[3].to}
+                onClick={() => setMobileMenuIsActive(prev => !prev)}
+              >
+                Por qué nosotros
+              </Link>
+              <Link
+                to={routes[4].to}
+                onClick={() => setMobileMenuIsActive(prev => !prev)}
+              >
+                Ubicación en el mapa
+              </Link>
             </div>}
           </div>
           <div>
-            <a>Nuestros servicios</a>
+            <Link
+              to={routes[2].to}
+              onClick={() => setMobileMenuIsActive(prev => !prev)}
+            >
+              Nuestros servicios
+            </Link>
           </div>
           <div>
-            <a>Contáctanos</a>
+            <Link>
+              Contáctanos
+            </Link>
           </div>
         </div>
       </div>
