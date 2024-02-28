@@ -17,15 +17,19 @@ import { useGetScreenSize } from "../hooks/useGetScreenSize"
 import LinkButton from "../components/Shared/LinkButton"
 import HeroSectionTitle from "../components/Shared/HeroSectionTitle"
 import { routes } from "./routes"
+import IndividualService from "../pages/IndividualService"
 
 export default function App() {
   const location = useLocation()
   const [mobileMenuIsActive, setMobileMenuIsActive] = useState(false)
   const { screenSize } = useGetScreenSize()
   const backgroundImage = screenSize > 600
-    ? getHeaderBackgroundImageByRoute(location.pathname).desktop
-    : getHeaderBackgroundImageByRoute(location.pathname).mobile
-  const pageTitle = routes.find(route => location.pathname === route.to).title
+    ? getHeaderBackgroundImageByRoute(location.pathname)?.desktop
+    : getHeaderBackgroundImageByRoute(location.pathname)?.mobile
+  const actualRoute = routes?.find(route => {
+    return location.pathname === route.to
+  })  
+  const pageTitle = actualRoute?.title
 
   return (
     <>
@@ -60,10 +64,10 @@ export default function App() {
             path={routes[2].to}
             element={<OurServices />}
           />
-          {/* <Route
+          <Route
             path="/our-services/:serviceid"
-            element={<OurServices />}
-          /> */}
+            element={<IndividualService />}
+          />
           <Route
             path={routes[3].to}
             element={<WhyUs />}

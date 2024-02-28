@@ -50,5 +50,7 @@ export function getHeaderBackgroundImageByRoute(route) {
       return headerBackgroundsImages.whyUs
     case '/our-company/where-are-we':
       return headerBackgroundsImages.whereAreWe
+    default:
+      return headerBackgroundsImages.injuryCare
   }
 }
