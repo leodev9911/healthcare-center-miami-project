@@ -1,8 +1,8 @@
 # Todo List
 
 ## High priority
-- [ ] Where are we mockup
-- [ ] Individual sevice page mockup
+- [x] Where are we mockup
+- [x] Individual sevice page mockup
 - [ ] Dropdowns menus
 - [ ] Header address bar
 - [ ] Include Portal de pacientes button in the navbar
